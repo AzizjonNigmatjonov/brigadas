@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brigada s</title>
+
+    <link rel="stylesheet" href="../assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="../assets/css/tailwind.css" />
+    <link rel="stylesheet" href="../assets/css/base/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="../assets/images/svg/logo.svg">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        .products-slider.uk-invisible {
+            visibility: visible !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header"
+        uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;"
+        class="navbar">
+        <header class="header absolute top-0 left-0 w-full z-10 border-b-2 border-[#FF9533] border-opacity-[0.42]"
+            uk-scrollspy="target: .animLeft; cls: animate__animated animate__lightSpeedInLeft; delay: 100;">
+
+            <div class="uk-container uk-container-large">
+                <nav class="uk-flex uk-flex-between uk-flex-middle py-[20px]">
+                    <div class="uk-navbar-left uk-padding-remove-left flex items-center space-x-[170px]">
+                        <div>
+                            <a href="index.html">
+                                <img class="w-[94px] uk-animation-fade" src="../assets/images/svg/logo.svg" alt="Logo">
+                            </a>
+                        </div>
+
+                        <div class="uk-visible@l uk-margin-remove-top">
+                            <ul class="flex uk-flex-middle" uk-grid>
+                                <li class="text-[#111111cd] animLeft">
+                                    <a href="#AboutUS" class="font-600 text-[#111] hover-link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="text-[#555555] animLeft">
+                                    <a href="#WhyWe" class="font-600 text-[#111] hover-link">
+                                        Почему мы?
+                                    </a>
+                                </li>
+                                <li class="text-[hsl(0,0%,33%)] animLeft">
+                                    <a href="#Testiminial" class="font-600 text-[#111] hover-link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="text-[#555555] animLeft">
+                                    <a href="#Staff" class="font-600 text-[#111] hover-link">
+                                        Команда
+                                    </a>
+                                </li>
+                                <li class="text-[#555555] animLeft">
+                                    <a href="#Contacts" class="font-600 text-[#111] hover-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <div class="flex uk-flex-middle space-x-[70px]">
+                            <div class="text-[#0C1D32] animLeft uk-visible@s">
+                                <a href="tel:+998998425050" class="text-[#0C1D32] hover-link font-600">
+                                    +998 (99) 842 50 50
+                                </a>
+                            </div>
+
+                            <div class="text-white animLeft hidden xl:block">
+                                <a href="#modalForm" uk-toggle
+                                    class="btn-fill-2 bg-[#0C1D32] text-white font-600 text-sm hover-link px-[22px] py-[12px]">
+                                    Оставить заявку
+                                </a>
+                            </div>
+
+                            <div class="hidden">
+                                <div>
+                                    <a href="#"
+                                        class="nav-link flex uk-animation-fade hover:text-[#10A0E7] hover:no-underline text-[#222222] lang inline-flex font-600 items-center px-4"
+                                        uk-scrollspy="cls: uk-animation-slide-right; delay: 200;"
+                                        style="animation-duration: .8s;">
+                                        UZ
+                                        <svg class="stroke-current ml-[5px]" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.24"
+                                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path opacity="0.64" d="M8.47021 10.74L12.0002 14.26L15.5302 10.74"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <div class="uk-padding-remove rounded-[4px]" style="min-width: 100px;"
+                                        uk-dropdown="pos: bottom-justify;animation: uk-animation-slide-top-small; duration: 200; mode: click">
+
+                                        <ul class="uk-grid uk-grid-small uk-flex-middle uk-flex-column uk-padding-small"
+                                            uk-grid>
+                                            <li class="uk-width-auto text-[#10A0E7]">
+                                                <a href="https://estetclinic.uz/ru"
+                                                    class="hover-link text-[#222222] font-600">
+                                                    RU
+                                                </a>
+                                            </li>
+                                            <li class="uk-width-auto text-[#10A0E7]">
+                                                <a href="https://estetclinic.uz/en"
+                                                    class="hover-link text-[#222222] font-600">
+                                                    EN
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-hidden@l">
+                                <div class="text-[#1d1d1b]">
+                                    <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip"
+                                        class="text-[#1d1d1b] hover-link">
+                                        <ul class="uk-flex uk-flex-column space-y-[3px] items-end">
+                                            <li>
+                                                <hr class="border-none w-[24px] h-[3px] bg-[#0C1D32] rounded-[6px]">
+                                            </li>
+                                            <li>
+                                                <hr class="border-none w-[22px] h-[3px] bg-[#0C1D32] rounded-[6px]">
+                                            </li>
+                                            <li>
+                                                <hr class="border-none w-[18px] h-[3px] bg-[#0C1D32] rounded-[6px]">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+
+                                <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                                    <div class="uk-offcanvas-bar mobile-navbar">
+
+                                        <div class="uk-flex uk-flex-right">
+                                            <button class="uk-offcanvas-close" type="button" uk-close>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                                    height="24">
+                                                    <path fill="none" d="M0 0h24v24H0z" />
+                                                    <path
+                                                        d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <ul class="mt-[50px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1"
+                                            uk-grid
+                                            uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
+                                            <li class="uk-flex uk-flex-right">
+                                                <a href="#AboutUS" class="font-500 animBottom">
+                                                    О компании
+                                                </a>
+                                            </li>
+                                            <div>
+                                                <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                            </div>
+                                            <li class="uk-flex uk-flex-right">
+                                                <a href="#WhyWe" class="font-500 animBottom">
+                                                    Почему мы?
+                                                </a>
+                                            </li>
+                                            <div>
+                                                <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                            </div>
+                                            <li class="uk-flex uk-flex-right">
+                                                <a href="#Testiminial" class="font-500 animBottom">
+                                                    Отзывы
+                                                </a>
+                                            </li>
+                                            <div>
+                                                <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                            </div>
+                                            <li class="uk-flex uk-flex-right">
+                                                <a href="#Staff" class="font-500 animBottom">
+                                                    Команда
+                                                </a>
+                                            </li>
+                                            <div>
+                                                <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                            </div>
+                                            <li class="uk-flex uk-flex-right">
+                                                <a href="#Contacts" class="font-500 animBottom">
+                                                    Контакты
+                                                </a>
+                                            </li>
+                                            <div>
+                                                <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                            </div>
+                                            <li class="uk-flex uk-flex-right">
+                                                <ul class="uk-grid-small uk-flex-middle" uk-grid>
+                                                    <li class="text-[#fff]">
+                                                        <a href="#"
+                                                            class="text-[#fff] font-400 hover-link animBottom">UZ</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr
+                                                            class="border-none w-[1px] h-[16px] bg-[#fff] bg-opacity-[0.06]">
+                                                    </li>
+                                                    <li class="text-[#fff]">
+                                                        <a href="#"
+                                                            class="text-[#fff] font-400 hover-link animBottom">RU</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr
+                                                            class="border-none w-[1px] h-[16px] bg-[#fff] bg-opacity-[0.06]">
+                                                    </li>
+                                                    <li class="text-[#fff]">
+                                                        <a href="#"
+                                                            class="text-[#fff] font-400 hover-link animBottom">EN</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main class="main-section uk-section uk-position-relative uk-overflow-hidden z-[1] uk-padding-remove-top"
+        uk-scrollspy="target: .animTop; cls: animate__animated animate__lightSpeedInLeft; delay: 100; repeat: true">
+        <div>
+            <ul>
+                <li class="main-contents-wrapper uk-height-1-1 uk-cover-container h-[100vh]"
+                    style="min-height: 560px !important;">
+                    <div
+                        class="uk-container uk-container-large uk-margin-remove-left left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2 w-full">
+                        <div class="uk-container uk-container-large relative uk-margin-remove-left">
+
+                            <div class="flex items-center uk-flex-between relative">
+                                <div class="main-wrapper md:w-[630px]">
+                                    <h1 class="heading text-[#0C1D32] animTop">
+                                        Современный ремонт и надёжное
+                                        строительство с BRIGADA-S
+                                        легко и качественно
+                                    </h1>
+                                    <div class="mt-[32px]">
+                                        <div
+                                            class="flex flex-col sm:flex-row sm:items-center space-y-[32px] sm:space-y-0 sm:space-x-[22px]">
+                                            <div class="text-white">
+                                                <a href="#modalForm" uk-toggle
+                                                    class="btn-fill bg-[#F19817] text-[#0C1D32] text-opacity-[0.92] font-600 text-sm hover-link px-[22px] py-[12px]">
+                                                    Оставить заявку
+                                                </a>
+                                            </div>
+                                            <div class="text-[#0C1D32]">
+                                                <a href="#Projects"
+                                                    class="btn-fill-2 border-[1px] border-[#394655] text-[#0C1D32] text-opacity-[0.92] font-600 text-sm hover-link px-[22px] py-[12px]">
+                                                    Посмотреть проекты
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="main-img-right-wrapper hidden md:block absolute right-[-140px] 2xl:right-[-70px] top-[-120px] lg:top-[-230px] z-[-1]">
+                                    <img style="mix-blend-mode: multiply;" src="../assets/images/main/main-img.png"
+                                        alt="house">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="mt-[-180px] mb-[80px] uk-hidden@s">
+        <img class="w-full" src="../assets/images/main/main-img-2.png" alt="main img">
+    </div>
+
+    <section id="AboutUS"
+        class="uk-section uk-padding-remove-top mt-[-50px] lg:mt-[-160px] relative z-[2] uk-overflow-hidden px-[10px] sm:px-[0]">
+        <div>
+            <div
+                class="flex flex-col space-y-[20px] sm:space-y-0 sm:flex-row mx-[16px] sm:mx-auto sm:space-x-[42px] md:w-[700px]">
+                <p class="text-[26px] text-[#0C1D32] font-medium sm:pb-[25px]"
+                    uk-scrollspy="cls: animate__animated animate__lightSpeedInRight; delay: 100;">
+                    О нас
+                </p>
+                <p class="text-[#0C1D32] font-medium sm:w-[500px]"
+                    uk-scrollspy="cls: animate__animated animate__lightSpeedInRight; delay: 100;">
+                    BRIGADA-S—современная строительная компания, занимающейся не только строительством, но и ремонтом
+                    мелких и крупных проектов в Узбекистане. За семь лет работы на строительном рынке нами было задумано
+                    и успешно реализовано множество проектов.Капитальное строительство, реконструкция, фасадные работы и
+                    ремонтирование под ключ стали основными направлениями нашей деятельности. BRIGADA-S включает в себя
+                    специалистов-профессионалов, имеющие опыт работы свыше 10 лет.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section bg-[#0C1D32] relative bg-no-repeat bg-cover"
+        style="background-image: url('../assets/images/main/dititals-back.png')">
+        <div class="uk-container uk-container-large relative z-[2]">
+            <div>
+                <div class="sm:w-[550px]">
+                    <h2 class="heading-second text-white"
+                        uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 200; repeat: true">Мы в цифрах:</h2>
+                    <div class="mt-[42px]">
+
+                        <div class="uk-grid-large uk-child-width-1-2" uk-grid>
+                            <div class="flex flex-col">
+                                <div class="text-white text-[36px] sm:text-[48px] md:text-[72px] font-600 flex">
+                                    <p id="clientCount">
+                                        100
+                                    </p>
+                                    <span>+</span>
+                                </div>
+                                <hr class="w-[22px] h-[2px] bg-[#F19817] mt-[12px] mb-[22px]">
+                                <p class="text-[16px] sm:text-[22px] font-medium text-white">
+                                    Крупных объектов
+                                </p>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="text-white text-[36px] sm:text-[48px] md:text-[72px] font-600 flex">
+                                    <p id="serviceCount" class="text-white font-600">
+                                        7
+                                    </p>
+                                </div>
+                                <hr class="w-[22px] h-[2px] bg-[#F19817] mt-[12px] mb-[22px]">
+                                <p class="text-[16px] sm:text-[22px] font-medium text-white">
+                                    Лет опыта
+                                </p>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="text-white text-[36px] sm:text-[48px] md:text-[72px] font-600 flex">
+                                    <p id="doctorCount">
+                                        16
+                                    </p>
+                                    <span>+</span>
+                                </div>
+                                <hr class="w-[22px] h-[2px] bg-[#F19817] mt-[12px] mb-[22px]">
+                                <p class="text-[16px] sm:text-[22px] font-medium text-white">
+                                    Ресторанов
+                                </p>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="text-white text-[36px] sm:text-[48px] md:text-[72px] font-600 flex">
+                                    <p id="item3">
+                                        300
+                                    </p>
+                                    <span>+</span>
+                                </div>
+                                <hr class="w-[22px] h-[2px] bg-[#F19817] mt-[12px] mb-[22px]">
+                                <p class="text-[16px] sm:text-[22px] font-medium text-white">
+                                    Средних объектов
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-[30px] right-0 z-[1] uk-visible@m">
+            <img class="object-cover lg:w-[950px]" src="../assets/images/svg/digitals-img.svg" alt="digitals">
+        </div>
+    </section>
+
+    <section id="WhyWe" class="uk-section uk-margin-top uk-padding-remove-bottom"
+        uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+        <div class="uk-container uk-container-large">
+            <div class="md:w-[530px]">
+                <h2 class="heading-second text-[#0C1D32] animTop">
+                    В чём наши преимущества:
+                </h2>
+                <p class="text-[#2D2C2C] font-medium mt-[4px] animTop text-sm sm:text-base">
+                    BRIGADA-S воплотит Ваши мечты в реальность и гарантирует дом
+                    Вашей мечты. Мы выбираем только лучшее и оригинальное
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section min-h-[100vh] bg-no-repeat bg-cover advantage-section"
+        style="background-image: url('../assets/images/main/advantage-back-img.png')">
+        <div class="uk-container uk-container-large"
+            uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100;">
+            <div class="sm:w-[500px] lg:ml-auto">
+                <ul class="flex flex-col space-y-[30px] lg:space-y-[65px] pt-[40px] sm:pt-0">
+                    <li>
+                        <span class="text-[#F19817] text-xl font-bold animTop">01</span>
+                        <h5 class="text-2xl text-[#111] font-600 my-[4px] animTop">
+                            Креативный подход
+                        </h5>
+                        <p class="text-[#0C1D32] tracking-[0.02em] animTop">
+                            Гарантируем высокое качество работы, исходя из последних трендов включая оттенки
+                            минимализма.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-[#F19817] text-xl font-bold animTop">02</span>
+                        <h5 class="text-2xl text-[#111] font-600 my-[4px] animTop">
+                            Современные технологии
+                        </h5>
+                        <p class="text-[#0C1D32] tracking-[0.02em] animTop">
+                            Мы гарантируем Вам использование в нашей работе зарубежного сырья, что, естесвенно, поможет
+                            нам превзойти Ваши ожидания и сэкономить Ваш баланс
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-[#F19817] text-xl font-bold animTop">03</span>
+                        <h5 class="text-2xl text-[#111] font-600 my-[4px] animTop">
+                            Сильная команда
+                        </h5>
+                        <p class="text-[#0C1D32] tracking-[0.02em] animTop">
+                            Наша сплочённая команда выполнит поставленную задачу вовремя, не требуя дополнительного
+                            срока
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lg:hidden">
+            <img class="w-full" src="../assets/images/main/advantage-back-img.png" alt="back">
+        </div>
+    </section>
+
+    <section class="uk-section bg-no-repeat bg-cover bg-[#0C1D32] quatection-section-1"
+        style="background-image: url('../assets/images/main/quotection-1-back.png')">
+        <div class="uk-container uk-container-large">
+            <div class="relative">
+                <div class="lg:w-[700px] relative z-[2]">
+                    <div>
+                        <h2 class="text-white heading-quote"
+                            uk-scrollspy="cls: animate__animated animate__lightSpeedInLeft; delay: 100; repeat: true">
+                            Создай ремонт своей мечты вместе
+                            с BRIGADA-S. Команда профессионалов
+                            помогут Вам во всем
+                        </h2>
+                    </div>
+                    <div class="text-white mt-[32px]">
+                        <a href="#modalForm" uk-toggle
+                            class="duration-100 bg-[#F19817] text-[#0C1D32] text-opacity-[0.92] font-600 text-sm hover-link px-[22px] py-[12px]">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+
+                <div class="absolute bottom-[-100px] sm:bottom-[-190px] right-[-180px] sm:right-0 z-[1]">
+                    <img class="w-[300px] sm:w-auto" src="../assets/images/main/quotection-img-1.png" alt="quote">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Projects" class="uk-section products-section"
+        uk-scrollspy="target: .animTop; cls: animate__animated animate__slideInDown; delay: 100; repeat: true">
+        <div class="uk-container uk-container-large">
+            <div>
+                <div class="md:w-[500px]">
+                    <h2 class="heading-second text-[#0C1D32] animTop">
+                        Проекты которые выполненные
+                        нами
+                    </h2>
+                    <p class="text-[#2D2C2C] font-medium mt-[4px] animTop">
+                        Мы никогда не мелочимся, чтобы сэкономить время и деньги.
+                        Договор для нас закон и мы его строго выполняем
+                    </p>
+                </div>
+                <div class="border-y-2 border-[#0C1D32] border-opacity-[0.12] py-[12px] mt-[22px] hidden md:block">
+                    <ul class="uk-tab tab flex uk-flex-middle space-x-[16px] sm:space-x-[32px]" uk-grid
+                        uk-switcher="connect: #productGallery; animation: uk-animation-fade"
+                        uk-scrollspy="target: .animateText; cls: uk-animation-slide-left-medium;delay: 200;"
+                        id="service-items-switcher">
+                        <li class="animateText">
+                            <a href="#">Рестораны</a>
+                        </li>
+                        <li class="animateText uk-padding-remove-left">
+                            <a href="#">Дома</a>
+                        </li>
+                        <li class="animateText uk-padding-remove-left">
+                            <a href="#">Бизнес центры</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section uk-padding-remove-vertical hidden md:block">
+        <ul id="productGallery" class="uk-switcher uk-margin mx-[16px] md:mx-0"
+            uk-scrollspy="target: .animateRight; cls: uk-animation-slide-right; delay: 300">
+            <div>
+                <div class="uk-position-relative uk-visible-toggle relative" tabindex="-1"
+                    uk-slider="clsActivated: animate__animated animate__fadeIn">
+
+                    <ul class="uk-slider-items uk-grid-large pb-[100px]" uk-lightbox="animation: slide" uk-grid>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-2.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-2.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-1.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-1.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-3.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-3.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-2.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-2.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="absolute bottom-[15px] lg:top-1/2 left-[16px] lg:left-[480px] -translate-y-1/2 products-slider-nav-left products-slider"
+                        href="#" uk-slider-item="previous">
+                        <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.3125 6.76306C22.3125 7.14245 21.9706 7.45599 21.5269 7.50561L21.4036 7.51245L3.22474 7.51245C2.72274 7.51245 2.3158 7.17694 2.3158 6.76306C2.3158 6.38367 2.65775 6.07013 3.1014 6.02051L3.22474 6.01367L21.4036 6.01367C21.9056 6.01367 22.3125 6.34919 22.3125 6.76306Z"
+                                fill="#1C314E" />
+                            <path
+                                d="M8.1425 12.2488C8.43598 12.5406 8.437 13.0148 8.14479 13.3078C7.87913 13.5743 7.46259 13.5993 7.16855 13.3825L7.08429 13.3101L1.03523 7.29532C0.767637 7.02924 0.743294 6.61176 0.962214 6.31814L1.03519 6.23404L7.08425 0.218239C7.3777 -0.0736006 7.8525 -0.0726189 8.14474 0.220432C8.41042 0.486842 8.43376 0.902919 8.21533 1.19563L8.14255 1.27947L2.62737 6.76496L8.1425 12.2488Z"
+                                fill="#1C314E" />
+                        </svg>
+                    </a>
+                    <a class="absolute bottom-[15px] lg:top-1/2 right-[16px] lg:right-[480px] -translate-y-1/2 products-slider-nav-right products-slider"
+                        href="#" uk-slider-item="next">
+                        <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.814453 6.76306C0.814453 7.14245 1.1564 7.45599 1.60006 7.50561L1.72339 7.51245L19.9022 7.51245C20.4042 7.51245 20.8112 7.17694 20.8112 6.76306C20.8112 6.38367 20.4692 6.07013 20.0256 6.02051L19.9022 6.01367L1.72339 6.01367C1.2214 6.01367 0.814453 6.34919 0.814453 6.76306Z"
+                                fill="#1C314E" />
+                            <path
+                                d="M14.9845 12.2488C14.691 12.5406 14.69 13.0148 14.9822 13.3078C15.2478 13.5743 15.6644 13.5993 15.9584 13.3825L16.0427 13.3101L22.0917 7.29532C22.3593 7.02924 22.3837 6.61176 22.1647 6.31814L22.0918 6.23404L16.0427 0.218239C15.7493 -0.0736006 15.2745 -0.0726189 14.9822 0.220432C14.7165 0.486842 14.6932 0.902919 14.9116 1.19563L14.9844 1.27947L20.4996 6.76496L14.9845 12.2488Z"
+                                fill="#1C314E" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+            <div>
+                <div class="uk-position-relative uk-visible-toggle relative" tabindex="-1"
+                    uk-slider="clsActivated: animate__animated animate__fadeIn">
+
+                    <ul class="uk-slider-items uk-grid-large pb-[100px]" uk-lightbox="animation: slide" uk-grid>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-2.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-2.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-1.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-1.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-3.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-3.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-2.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-2.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="absolute bottom-[15px] lg:top-1/2 left-[16px] lg:left-[480px] -translate-y-1/2 products-slider-nav-left products-slider"
+                        href="#" uk-slider-item="previous">
+                        <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.3125 6.76306C22.3125 7.14245 21.9706 7.45599 21.5269 7.50561L21.4036 7.51245L3.22474 7.51245C2.72274 7.51245 2.3158 7.17694 2.3158 6.76306C2.3158 6.38367 2.65775 6.07013 3.1014 6.02051L3.22474 6.01367L21.4036 6.01367C21.9056 6.01367 22.3125 6.34919 22.3125 6.76306Z"
+                                fill="#1C314E" />
+                            <path
+                                d="M8.1425 12.2488C8.43598 12.5406 8.437 13.0148 8.14479 13.3078C7.87913 13.5743 7.46259 13.5993 7.16855 13.3825L7.08429 13.3101L1.03523 7.29532C0.767637 7.02924 0.743294 6.61176 0.962214 6.31814L1.03519 6.23404L7.08425 0.218239C7.3777 -0.0736006 7.8525 -0.0726189 8.14474 0.220432C8.41042 0.486842 8.43376 0.902919 8.21533 1.19563L8.14255 1.27947L2.62737 6.76496L8.1425 12.2488Z"
+                                fill="#1C314E" />
+                        </svg>
+                    </a>
+                    <a class="absolute bottom-[15px] lg:top-1/2 right-[16px] lg:right-[480px] -translate-y-1/2 products-slider-nav-right products-slider"
+                        href="#" uk-slider-item="next">
+                        <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.814453 6.76306C0.814453 7.14245 1.1564 7.45599 1.60006 7.50561L1.72339 7.51245L19.9022 7.51245C20.4042 7.51245 20.8112 7.17694 20.8112 6.76306C20.8112 6.38367 20.4692 6.07013 20.0256 6.02051L19.9022 6.01367L1.72339 6.01367C1.2214 6.01367 0.814453 6.34919 0.814453 6.76306Z"
+                                fill="#1C314E" />
+                            <path
+                                d="M14.9845 12.2488C14.691 12.5406 14.69 13.0148 14.9822 13.3078C15.2478 13.5743 15.6644 13.5993 15.9584 13.3825L16.0427 13.3101L22.0917 7.29532C22.3593 7.02924 22.3837 6.61176 22.1647 6.31814L22.0918 6.23404L16.0427 0.218239C15.7493 -0.0736006 15.2745 -0.0726189 14.9822 0.220432C14.7165 0.486842 14.6932 0.902919 14.9116 1.19563L14.9844 1.27947L20.4996 6.76496L14.9845 12.2488Z"
+                                fill="#1C314E" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+            <div>
+                <div class="uk-position-relative uk-visible-toggle relative" tabindex="-1"
+                    uk-slider="clsActivated: animate__animated animate__fadeIn">
+
+                    <ul class="uk-slider-items uk-grid-large pb-[100px]" uk-lightbox="animation: slide" uk-grid>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-2.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-2.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-1.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-1.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-3.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-3.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-2.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-2.png" alt="product">
+                                    <p
+                                        class="text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="absolute bottom-[15px] lg:top-1/2 left-[16px] lg:left-[480px] -translate-y-1/2 products-slider-nav-left products-slider"
+                        href="#" uk-slider-item="previous">
+                        <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.3125 6.76306C22.3125 7.14245 21.9706 7.45599 21.5269 7.50561L21.4036 7.51245L3.22474 7.51245C2.72274 7.51245 2.3158 7.17694 2.3158 6.76306C2.3158 6.38367 2.65775 6.07013 3.1014 6.02051L3.22474 6.01367L21.4036 6.01367C21.9056 6.01367 22.3125 6.34919 22.3125 6.76306Z"
+                                fill="#1C314E" />
+                            <path
+                                d="M8.1425 12.2488C8.43598 12.5406 8.437 13.0148 8.14479 13.3078C7.87913 13.5743 7.46259 13.5993 7.16855 13.3825L7.08429 13.3101L1.03523 7.29532C0.767637 7.02924 0.743294 6.61176 0.962214 6.31814L1.03519 6.23404L7.08425 0.218239C7.3777 -0.0736006 7.8525 -0.0726189 8.14474 0.220432C8.41042 0.486842 8.43376 0.902919 8.21533 1.19563L8.14255 1.27947L2.62737 6.76496L8.1425 12.2488Z"
+                                fill="#1C314E" />
+                        </svg>
+                    </a>
+                    <a class="absolute bottom-[15px] lg:top-1/2 right-[16px] lg:right-[480px] -translate-y-1/2 products-slider-nav-right products-slider"
+                        href="#" uk-slider-item="next">
+                        <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.814453 6.76306C0.814453 7.14245 1.1564 7.45599 1.60006 7.50561L1.72339 7.51245L19.9022 7.51245C20.4042 7.51245 20.8112 7.17694 20.8112 6.76306C20.8112 6.38367 20.4692 6.07013 20.0256 6.02051L19.9022 6.01367L1.72339 6.01367C1.2214 6.01367 0.814453 6.34919 0.814453 6.76306Z"
+                                fill="#1C314E" />
+                            <path
+                                d="M14.9845 12.2488C14.691 12.5406 14.69 13.0148 14.9822 13.3078C15.2478 13.5743 15.6644 13.5993 15.9584 13.3825L16.0427 13.3101L22.0917 7.29532C22.3593 7.02924 22.3837 6.61176 22.1647 6.31814L22.0918 6.23404L16.0427 0.218239C15.7493 -0.0736006 15.2745 -0.0726189 14.9822 0.220432C14.7165 0.486842 14.6932 0.902919 14.9116 1.19563L14.9844 1.27947L20.4996 6.76496L14.9845 12.2488Z"
+                                fill="#1C314E" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </ul>
+    </section>
+
+    <section class="uk-section uk-padding-remove-vertical md:hidden">
+        <div class="uk-container uk-container-large">
+            <div>
+                <div class="uk-position-relative uk-visible-toggle relative" tabindex="-1" uk-slider>
+
+                    <ul class="uk-slider-items uk-grid-large pb-[100px]" uk-lightbox="animation: slide" uk-grid>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-1.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-1.png" alt="product">
+                                    <p
+                                        class="sm:text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-2.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-2.png" alt="product">
+                                    <p
+                                        class="sm:text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="uk-width-1-3@l uk-width-3-4">
+                            <div class="relative">
+                                <a class="uk-inline" href="../assets/images/main/product-img-3.png">
+                                    <img class="w-full" src="../assets/images/main/product-img-3.png" alt="product">
+                                    <p
+                                        class="sm:text-2xl text-[#0C1D32] font-medium mt-[12px] absolute bottom-[-40px] left-0">
+                                        Имя проекта
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Testiminial" class="uk-section uk-padding-remove-top sm:mt-[30px]"
+        uk-scrollspy="target: .animTop; cls: animate__animated animate__lightSpeedInLeft; delay: 100; repeat: true">
+        <div class="uk-container uk-container-large">
+            <div class="sm:w-[400px]">
+                <h2 class="heading-second text-[#0C1D32] animTop">
+                    Наши учителя что думают
+                    о нас?
+                </h2>
+                <p class="text-[#2D2C2C] font-medium mt-[4px] animTop">
+                    Честность и оригинальность
+                </p>
+            </div>
+
+            <div class="partisipant-wrapper uk-position-relative uk-visible-toggle mx-[16px] hidden md:block"
+                tabindex="-1" uk-slideshow="animation: fade; autoplay: true;">
+
+                <ul class="partisipant-list uk-slideshow-items uk-grid uk-grid-large">
+                    <li>
+                        <div class="uk-position-bottom uk-position-medium">
+                            <div class="uk-grid-large uk-flex-middle uk-flex-between flex-wrap-reverse" uk-grid>
+                                <div class="uk-width-1-2@l">
+                                    <div class="mb-[40px]">
+                                        <h2 class="heading-quote text-[#0C1D32] font-gilroy">
+                                            Хасан Мамасаидов
+                                        </h2>
+                                        <div class="flex md:items-center md:flex-row flex-col">
+                                            <p class="text-xl text-[#1C314E] font-600 mt-[20px]">
+                                                Основатель Dekos и Mfaktor
+                                            </p>
+                                            <div class="ml-[22px] space-x-[22px] flex items-center mt-[22px] md:mt-0">
+                                                <img src="../assets/images/logos/mfaktor.svg" alt="company">
+                                                <img src="../assets/images/logos/dekos.svg" alt="company">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-[#1C314E] font-medium">
+                                        Хасан Мамасаидов—основатель и генеральный директор компаний Dekos и MFaktor,
+                                        один из опытных и
+                                        целеустремлённых предпринимателей в Узбекистане утверждает, что BRIGADA-S
+                                        послана им всевышним,
+                                        когда они нуждались в профессионалах- специалистах новыми взглядами на
+                                        жизнь. Удовлетворяющие
+                                        все потребности как клиентов, так и предпринимателей. Он считает, что если
+                                        клиент довольный
+                                        значит проект выполнен успешно.
+                                    </p>
+                                    <div class="mt-[32px]">
+                                        <ul class="flex items-center">
+                                            <li class="px-[6px]">
+                                                <a href="#">
+                                                    <img src="../assets/images/svg/instagram.svg" alt="social media">
+                                                </a>
+                                            </li>
+                                            <li class="border-x border-[#1C314E] border-opacity-[0.12] px-[6px]">
+                                                <a href="#">
+                                                    <img src="../assets/images/svg/telegram.svg" alt="social media">
+                                                </a>
+                                            </li>
+                                            <li class="px-[6px]">
+                                                <a href="#">
+                                                    <img src="../assets/images/svg/facebook.svg" alt="social media">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@l flex justify-center">
+                                    <div class="transition duration-500 rotate-[4deg]">
+                                        <div class="sm:w-[440px] bg-[#C4C4C4] bg-opacity-[.42]">
+                                            <div class="bg-[#0C1D32] -rotate-[4deg] pt-[30px]">
+                                                <img class="object-cover min-h-[340px] md:min-h-[600px]"
+                                                    src="../assets/images/main/hasan-aka.png" alt="partner">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-bottom uk-position-medium">
+                            <div class="uk-grid-large uk-flex-middle uk-flex-between flex-wrap-reverse" uk-grid>
+                                <div class="uk-width-1-2@l">
+                                    <div class="mb-[40px]">
+                                        <h2 class="heading-quote text-[#0C1D32] font-gilroy">
+                                            Хусан Мамасаидов
+                                        </h2>
+                                        <div class="flex md:items-center md:flex-row flex-col">
+                                            <p class="text-xl text-[#1C314E] font-600 mt-[20px]">
+                                                Основатель Dekos и Mfaktor
+                                            </p>
+                                            <div class="ml-[22px] space-x-[22px] flex items-center mt-[22px] md:mt-0">
+                                                <img src="../assets/images/logos/mfaktor.svg" alt="company">
+                                                <img src="../assets/images/logos/dekos.svg" alt="company">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-[#1C314E] font-medium">
+                                        Хасан Мамасаидов—основатель и генеральный директор компаний Dekos и MFaktor,
+                                        один из опытных и
+                                        целеустремлённых предпринимателей в Узбекистане утверждает, что BRIGADA-S
+                                        послана им всевышним,
+                                        когда они нуждались в профессионалах- специалистах новыми взглядами на
+                                        жизнь. Удовлетворяющие
+                                        все потребности как клиентов, так и предпринимателей. Он считает, что если
+                                        клиент довольный
+                                        значит проект выполнен успешно.
+                                    </p>
+                                    <div class="mt-[32px]">
+                                        <ul class="flex items-center">
+                                            <li class="px-[6px]">
+                                                <a href="#">
+                                                    <img src="../assets/images/svg/instagram.svg" alt="social media">
+                                                </a>
+                                            </li>
+                                            <li class="border-x border-[#1C314E] border-opacity-[0.12] px-[6px]">
+                                                <a href="#">
+                                                    <img src="../assets/images/svg/telegram.svg" alt="social media">
+                                                </a>
+                                            </li>
+                                            <li class="px-[6px]">
+                                                <a href="#">
+                                                    <img src="../assets/images/svg/facebook.svg" alt="social media">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2@l flex justify-center">
+                                    <div class="transition duration-500 rotate-[4deg]">
+                                        <div class="sm:w-[440px] bg-[#C4C4C4] bg-opacity-[.42]">
+                                            <div class="bg-[#0C1D32] -rotate-[4deg] pt-[30px]">
+                                                <img class="object-cover min-h-[340px] md:min-h-[600px]"
+                                                    src="../assets/images/main/husan-aka.png" alt="partner">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="slideshow-nav-left absolute right-[640px] top-1/2 -translate-y-1/2 flex flex-col items-center hover-link"
+                    href="#" uk-slideshow-item="previous">
+                    <svg class="rotate-180" width="23" height="15" viewBox="0 0 23 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.814453 7.50525C0.814453 7.88464 1.1564 8.19818 1.60006 8.2478L1.72339 8.25464L19.9022 8.25464C20.4042 8.25464 20.8112 7.91913 20.8112 7.50525C20.8112 7.12586 20.4692 6.81232 20.0256 6.7627L19.9022 6.75586L1.72339 6.75586C1.2214 6.75586 0.814453 7.09137 0.814453 7.50525Z"
+                            fill="#1C314E" />
+                        <path
+                            d="M14.9845 12.991C14.691 13.2828 14.69 13.757 14.9822 14.05C15.2478 14.3165 15.6644 14.3415 15.9584 14.1246L16.0427 14.0523L22.0917 8.03751C22.3593 7.77143 22.3837 7.35395 22.1647 7.06033L22.0918 6.97623L16.0427 0.960427C15.7493 0.668587 15.2745 0.669569 14.9822 0.96262C14.7165 1.22903 14.6932 1.64511 14.9116 1.93782L14.9844 2.02166L20.4996 7.50715L14.9845 12.991Z"
+                            fill="#1C314E" />
+                    </svg>
+                    <p class="text-[#1C314E] text-sm">
+                        Предыдущий
+                    </p>
+                </a>
+                <a class="slideshow-nav-right absolute right-[20px] top-1/2 -translate-y-1/2 flex flex-col items-center hover-link"
+                    href="#" uk-slideshow-item="next">
+                    <p class="text-[#1C314E] text-sm">
+                        Следующий
+                    </p>
+                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.814453 7.50525C0.814453 7.88464 1.1564 8.19818 1.60006 8.2478L1.72339 8.25464L19.9022 8.25464C20.4042 8.25464 20.8112 7.91913 20.8112 7.50525C20.8112 7.12586 20.4692 6.81232 20.0256 6.7627L19.9022 6.75586L1.72339 6.75586C1.2214 6.75586 0.814453 7.09137 0.814453 7.50525Z"
+                            fill="#1C314E" />
+                        <path
+                            d="M14.9845 12.991C14.691 13.2828 14.69 13.757 14.9822 14.05C15.2478 14.3165 15.6644 14.3415 15.9584 14.1246L16.0427 14.0523L22.0917 8.03751C22.3593 7.77143 22.3837 7.35395 22.1647 7.06033L22.0918 6.97623L16.0427 0.960427C15.7493 0.668587 15.2745 0.669569 14.9822 0.96262C14.7165 1.22903 14.6932 1.64511 14.9116 1.93782L14.9844 2.02166L20.4996 7.50715L14.9845 12.991Z"
+                            fill="#1C314E" />
+                    </svg>
+                </a>
+
+            </div>
+
+            <div class="mt-[70px] md:hidden">
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider>
+
+                    <ul class="uk-slider-items uk-grid uk-grid-large">
+                        <li class="w-[88%]">
+                            <div>
+                                <div>
+                                    <div>
+                                        <h2 class="font-[600] text-[26px] text-[#0C1D32] font-gilroy">
+                                            Хасан Мамасаидов
+                                        </h2>
+                                        <div class="flex flex-col">
+                                            <p class="text-[#1C314E] font-600">
+                                                Основатель Dekos и Mfaktor
+                                            </p>
+                                            <div
+                                                class="ml-[22px] space-x-[22px] flex-wrap flex items-center mt-[22px] md:mt-0">
+                                                <img src="../assets/images/logos/mfaktor.svg" alt="company">
+                                                <img src="../assets/images/logos/dekos.svg" alt="company">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-[34px]">
+                                <div class="transition duration-500 rotate-[4deg]">
+                                    <div class="sm:w-[440px] bg-[#C4C4C4] bg-opacity-[.42]">
+                                        <div class="bg-[#0C1D32] -rotate-[4deg] pt-[30px]">
+                                            <img class="object-cover min-h-[377px] md:min-h-[600px]"
+                                                src="../assets/images/main/hasan-aka.png" alt="partner">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[#1C314E] font-medium mt-[30px] text-sm">
+                                    Хасан Мамасаидов—основатель и генеральный директор компаний Dekos и MFaktor, один из
+                                    опытных и целеустремлённых предпринимателей в Узбекистане утверждает, что BRIGADA-S
+                                    послана им всевышним, когда они нуждались в профессионалах- специалистах новыми
+                                    взглядами на жизнь. Удовлетворяющие все потребности как клиентов, так и
+                                    предпринимателей. Он считает, что если клиент довольный значит проект выполнен
+                                    успешно.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="w-[88%]">
+                            <div>
+                                <div>
+                                    <div>
+                                        <h2 class="font-[600] text-[26px] text-[#0C1D32] font-gilroy">
+                                            Хусан Мамасаидов
+                                        </h2>
+                                        <div class="flex flex-col">
+                                            <p class="text-[#1C314E] font-600">
+                                                Основатель Dekos
+                                            </p>
+                                            <div
+                                                class="ml-[22px] space-x-[22px] flex-wrap flex items-center mt-[22px] md:mt-0">
+                                                <img src="../assets/images/logos/dekos.svg" alt="company">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-[34px]">
+                                <div class="transition duration-500 rotate-[4deg]">
+                                    <div class="sm:w-[440px] bg-[#C4C4C4] bg-opacity-[.42]">
+                                        <div class="bg-[#0C1D32] -rotate-[4deg] pt-[30px]">
+                                            <img class="object-cover min-h-[377px] md:min-h-[600px]"
+                                                src="../assets/images/main/husan-aka.png" alt="partner">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[#1C314E] font-medium mt-[30px] text-sm">
+                                    Хусан Мамасаидов—основатель и генеральный директор компаний Dekos и MFaktor, один из
+                                    опытных и целеустремлённых предпринимателей в Узбекистане утверждает, что BRIGADA-S
+                                    послана им всевышним, когда они нуждались в профессионалах- специалистах новыми
+                                    взглядами на жизнь. Удовлетворяющие все потребности как клиентов, так и
+                                    предпринимателей. Он считает, что если клиент довольный значит проект выполнен
+                                    успешно.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section bg-no-repeat bg-cover bg-[#0C1D32] uk-margin-large-top quatection-section-1"
+        style="background-image: url('../assets/images/main/quotection-1-back.png')">
+        <div class="uk-container uk-container-large">
+            <div class="relative">
+                <div class="md:w-[700px] relative z-[2]">
+                    <div>
+                        <h2 class="text-white heading-quote"
+                            uk-scrollspy="cls: animate__animated animate__lightSpeedInLeft; delay: 200; repeat: true">
+                            Тщательный подход к проекту является
+                            залогом честного плодотворного
+                            сотрудничества .
+                        </h2>
+                    </div>
+                    <div class="text-white mt-[32px]">
+                        <a href="#modalForm" uk-toggle
+                            class="duration-100 bg-[#F19817] text-[#0C1D32] text-opacity-[0.92] font-600 text-sm hover-link px-[22px] py-[12px]">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute bottom-[-50px] sm:bottom-[-170px] right-[-50px] sm:right-0 z-[1] sm:hidden lg:block">
+                    <img class="w-[180px] sm:w-auto" src="../assets/images/svg/quotection-2-img.svg" alt="quote">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section uk-overflow-hidden"
+        uk-scrollspy="target: .animTop; cls: animate__animated animate__slideInDown; delay: 100; repeat: true">
+        <div class="uk-container uk-container-large">
+            <div class="sm:w-[500px]">
+                <h2 class="heading-second text-[#0C1D32] animTop">
+                    Наши наставники—наша опора
+                </h2>
+                <p class="text-[#2D2C2C] font-medium mt-[4px] animTop uk-width-3-4@s">
+                    С BRIGADA-S Вы безусловно можете приобрести
+                    качественные услуги и Дом Вашей мечты
+                </p>
+            </div>
+
+            <div class="mt-[42px]" uk-scrollspy="target: .animFade; cls: animate__animated animate__fadeIn;">
+                <ul class="space-y-[42px]">
+                    <li>
+                        <div class="uk-grid-large uk-flex-middle uk-flex-center group" uk-grid>
+                            <div
+                                class="uk-width-1-3@m uk-width-1-2@s transition duration-500 -rotate-2 group-hover:rotate-0">
+                                <div class="w-full h-full bg-[#F19817] bg-opacity-[.42]">
+                                    <div>
+                                        <img class="w-full h-full object-cover transition duration-500 group-hover:rotate-0 rotate-2 animFade"
+                                            src="../assets/images/main/worker-1.png" alt="employee">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[560px] xl:ml-[70px]">
+                                <div>
+                                    <h3 class="heading-second text-[#0C1D32] font-600"
+                                        uk-scrollspy="cls: animate__animated animate__lightSpeedInRight; delay: 100;">
+                                        Сардор Джабаров</h3>
+                                    <p class="text-[#2D2C2C] font-medium mt-[10px] text-sm sm:text-base"
+                                        uk-scrollspy="cls: animate__animated animate__lightSpeedInRight; delay: 100;">
+                                        Профессионально обучался в Москве на специальных курсах. Активно участвовал в
+                                        строительстве Moscow city и других районах города. После обучения на курсах,
+                                        заметно начал развиваться и работает с разными проектами и оказывает услуги не
+                                        только ремонта но и строительства под ключ. Гарантирует высококачественной
+                                        проделки используя современные технологии основываясь на тренд.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-grid-large uk-flex-middle uk-flex-row-reverse uk-flex-center group" uk-grid>
+                            <div
+                                class="uk-width-1-3@m uk-width-1-2@s transition duration-500 -rotate-2 group-hover:rotate-0">
+                                <div class="w-full h-full bg-[#F19817] bg-opacity-[.42]">
+                                    <div>
+                                        <img class="w-full h-full object-cover transition duration-500 group-hover:rotate-0 rotate-2 animFade"
+                                            src="../assets/images/main/worker-2.png" alt="employee">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-[560px]">
+                                <div>
+                                    <h3 class="heading-second text-[#0C1D32] font-600"
+                                        uk-scrollspy="cls: animate__animated animate__lightSpeedInLeft; delay: 100;">
+                                        Лучший наставник
+                                        Мурад Назаров
+                                    </h3>
+                                    <p class="text-[#2D2C2C] font-medium mt-[10px] text-sm sm:text-base"
+                                        uk-scrollspy="cls: animate__animated animate__lightSpeedInLeft; delay: 100;">
+                                        В каждой сфере есть свои мастера. <br>
+                                        У каждого начинающего специалиста есть свой идеал. С ним вы можете пройти 10
+                                        летний путь за короткие 3–4года. Мурод Назаров Профессионал в сфере
+                                        строительства
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="uk-grid-large uk-flex-middle uk-flex-center group" uk-grid>
+                            <div class="uk-width-1-3@m uk-width-1-2@s">
+                                <div class="relative">
+                                    <img src="../assets/images/svg/sertificate-background-liner.svg" alt="back"
+                                        uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+                                    <img class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[430px] object-cover animFade"
+                                        src="../assets/images/main/sertificate.png" alt="sertificate">
+                                </div>
+                            </div>
+                            <div class="md:w-[560px] md:ml-[70px]">
+                                <div>
+                                    <h3 class="heading-second text-[#0C1D32] font-600"
+                                        uk-scrollspy="cls: animate__animated animate__lightSpeedInRight; delay: 100;">
+                                        ВАШЕ ДОВЕРИЕ — <br>
+                                        ПРЕВЫШЕ ВСЕГО
+                                    </h3>
+                                    <p class="text-[#2D2C2C] font-medium mt-[10px] text-sm sm:text-base"
+                                        uk-scrollspy="cls: animate__animated animate__lightSpeedInRight; delay: 100;">
+                                        BRIGADA-S наша строительная компания законно занимается не только
+                                        строительством, но и ремонтом мелких и крупных проектов в Узбекистане. За сем
+                                        лет работы на рынке нашей бригадой было успешно реализованы более ста проектов,
+                                        качественно реконструировани более шестнадцати ресторанов, а так же свыше
+                                        трехсот средних объектов сданы на использование
+                                    </p>
+                                    <div class="text-[#fff] mt-[32px]"
+                                        uk-scrollspy="cls: animate__animated animate__lightSpeedInRight; delay: 100;">
+                                        <a href="#modalForm" uk-toggle
+                                            class="btn-fill-2 border-[1px] border-[#394655] text-[#0C1D32] text-opacity-[0.92] font-600 text-sm hover-link px-[22px] py-[12px]">
+                                            Оставить заявку
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="Staff" class="uk-section sm:mt-[30px]"
+        uk-scrollspy="target: .animTop; cls: uk-animation-slide-top-medium; delay: 100; repeat: true">
+        <div class="uk-container uk-container-large">
+            <div class="lg:w-[700px]">
+                <h2 class="heading-second text-[#0C1D32] animTop">
+                    Профессионалы своего дела
+                </h2>
+                <p class="text-[#2D2C2C] font-medium mt-[4px] animTop">
+                    В BRIGADA-S собраны самые элитные специалисты в области строительства и ремонта.
+                    Наши избранные сотрудники ведут свою деятельность в данной сфере уже много лет.
+                </p>
+            </div>
+
+
+        </div>
+
+        <div class="uk-position-relative px-[16px] sm:px-0 lg:mx-0 xl:pl-[70px] pt-[32px]">
+
+            <div class="uk-position-relative uk-visible-toggle hidden md:block" tabindex="-1"
+                uk-slider="sets: true;">
+
+                <ul class="uk-slider-items uk-grid uk-grid-large pt-[20px]">
+
+                    <li class="group">
+                        <div class="uk-grid-large" uk-grid x-data="{ open: false }">
+                            <div class="w-full sm:w-[400px] relative">
+                                <img @click="open = !open" :class="open ? 'rotate-[-3deg]' : ''"
+                                    class="w-full duration-200 max-h-[410px] uk-overflow-hidden relative z-[2]"
+                                    src="../assets/images/main/testimonial-1.png" alt="testiminial">
+                                <div class="mt-[22px]">
+                                    <h3 class="text-2xl font-600 text-[#1C314E]">
+                                        Алибердиев Гайрат
+                                    </h3>
+                                    <p class="mt-[4px] text-xl text-[#1C314E]">
+                                        Технадзор
+                                    </p>
+                                </div>
+                                <div @click="open = !open"
+                                    class="hidden lg:group-hover:flex group z-[3] cursor-pointer absolute top-1/2 right-[-24px] -translate-y-1/2 w-[48px] h-[48px] bg-[#F19817] rounded-full items-center justify-center">
+                                    <svg :class="open ? 'rotate-0' : ''" class="rotate-[45deg] duration-200" width="23"
+                                        height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.28467 17.4141L17.3139 6.38485" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.3086 17.4096L6.28955 6.39062" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div x-show="open" @click.outside="open = false"
+                                class="w-[450px] mt-[10px] animate__animated animate__slideInLeft relative z-[1]">
+                                <h3 class="text-2xl font-600 text-[#0C1D32]">
+                                    Алибердиев Гайрат
+                                </h3>
+                                <p class="text-[#1C314E] font-medium text-lg text-opacity-[0.72] mt-[10px]">
+                                    Профессионал с 20-летним опытом работы в сфере дизайна интерьеров. Созданные им
+                                    дизайны
+                                    выделяются уникальностью и считаются эксклюзивными и феноменальними. Основатель и
+                                    руководитель школы дизайна и студии дизайна. Участник выдающихся проектов и
+                                    конкурсов в
+                                    Узбекистане в области строительства и ремонта. Работает и в стиле Bionica, тренд в
+                                    дизайне интерьера. Имеет свой творческий вкус, а так же взгляд на дизайны интерьеров
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group">
+                        <div class="uk-grid-large" uk-grid x-data="{ open: true }">
+                            <div class="w-full sm:w-[400px] relative">
+                                <img @click="open = !open" :class="open ? 'rotate-[-3deg]' : ''"
+                                    class="w-full duration-200 max-h-[410px] uk-overflow-hidden relative z-[2]"
+                                    src="../assets/images/main/testimonial-2.png" alt="testiminial">
+                                <div class="mt-[22px]">
+                                    <h3 class="text-2xl font-600 text-[#1C314E]">
+                                        Миразиз Ахмедов
+                                    </h3>
+                                    <p class="mt-[4px] text-xl text-[#1C314E]">
+                                        Дизайнер
+                                    </p>
+                                </div>
+                                <div @click="open = !open"
+                                    class="hidden lg:group-hover:flex group z-[3] cursor-pointer absolute top-1/2 right-[-24px] -translate-y-1/2 w-[48px] h-[48px] bg-[#F19817] rounded-full items-center justify-center">
+                                    <svg :class="open ? 'rotate-0' : ''" class="rotate-[45deg] duration-200" width="23"
+                                        height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.28467 17.4141L17.3139 6.38485" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.3086 17.4096L6.28955 6.39062" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div x-show="open" @click.outside="open = false"
+                                class="w-[450px] mt-[10px] animate__animated animate__slideInLeft relative z-[1]">
+                                <h3 class="text-2xl font-600 text-[#0C1D32]">
+                                    Миразиз Ахмедов
+                                </h3>
+                                <p class="text-[#1C314E] font-medium text-lg text-opacity-[0.72] mt-[10px]">
+                                    Профессионал с 20-летним опытом работы в сфере дизайна интерьеров. Созданные им
+                                    дизайны
+                                    выделяются уникальностью и считаются эксклюзивными и феноменальними. Основатель и
+                                    руководитель школы дизайна и студии дизайна. Участник выдающихся проектов и
+                                    конкурсов в
+                                    Узбекистане в области строительства и ремонта. Работает и в стиле Bionica, тренд в
+                                    дизайне интерьера. Имеет свой творческий вкус, а так же взгляд на дизайны интерьеров
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group">
+                        <div class="uk-grid-large" uk-grid x-data="{ open: false }">
+                            <div class="w-full sm:w-[400px] relative">
+                                <img @click="open = !open" :class="open ? 'rotate-[-3deg]' : ''"
+                                    class="w-full duration-200 max-h-[410px] uk-overflow-hidden relative z-[2]"
+                                    src="../assets/images/main/testimonial-3.png" alt="testiminial">
+                                <div class="mt-[22px]">
+                                    <h3 class="text-2xl font-600 text-[#1C314E]">
+                                        Игорь Ан
+                                    </h3>
+                                    <p class="mt-[4px] text-xl text-[#1C314E]">
+                                        Дизайнер
+                                    </p>
+                                </div>
+                                <div @click="open = !open"
+                                    class="hidden lg:group-hover:flex group z-[3] cursor-pointer absolute top-1/2 right-[-24px] -translate-y-1/2 w-[48px] h-[48px] bg-[#F19817] rounded-full items-center justify-center">
+                                    <svg :class="open ? 'rotate-0' : ''" class="rotate-[45deg] duration-200" width="23"
+                                        height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.28467 17.4141L17.3139 6.38485" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.3086 17.4096L6.28955 6.39062" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div x-show="open" @click.outside="open = false"
+                                class="w-[450px] mt-[10px] animate__animated animate__slideInLeft relative z-[1]">
+                                <h3 class="text-2xl font-600 text-[#0C1D32]">
+                                    Алибердиев Гайрат
+                                </h3>
+                                <p class="text-[#1C314E] font-medium text-lg text-opacity-[0.72] mt-[10px]">
+                                    Профессионал с 20-летним опытом работы в сфере дизайна интерьеров. Созданные им
+                                    дизайны
+                                    выделяются уникальностью и считаются эксклюзивными и феноменальними. Основатель и
+                                    руководитель школы дизайна и студии дизайна. Участник выдающихся проектов и
+                                    конкурсов в
+                                    Узбекистане в области строительства и ремонта. Работает и в стиле Bionica, тренд в
+                                    дизайне интерьера. Имеет свой творческий вкус, а так же взгляд на дизайны интерьеров
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="group">
+                        <div class="uk-grid-large" uk-grid x-data="{ open: false }">
+                            <div class="w-full sm:w-[400px] relative">
+                                <img @click="open = !open" :class="open ? 'rotate-[-3deg]' : ''"
+                                    class="w-full duration-200 max-h-[410px] uk-overflow-hidden relative z-[2]"
+                                    src="../assets/images/main/testimonial-2.png" alt="testiminial">
+                                <div class="mt-[22px]">
+                                    <h3 class="text-2xl font-600 text-[#1C314E]">
+                                        Алибердиев Гайрат
+                                    </h3>
+                                    <p class="mt-[4px] text-xl text-[#1C314E]">
+                                        Технадзор
+                                    </p>
+                                </div>
+                                <div @click="open = !open"
+                                    class="hidden lg:group-hover:flex group z-[3] cursor-pointer absolute top-1/2 right-[-24px] -translate-y-1/2 w-[48px] h-[48px] bg-[#F19817] rounded-full items-center justify-center">
+                                    <svg :class="open ? 'rotate-0' : ''" class="rotate-[45deg] duration-200" width="23"
+                                        height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.28467 17.4141L17.3139 6.38485" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.3086 17.4096L6.28955 6.39062" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div x-show="open" @click.outside="open = false"
+                                class="w-[450px] mt-[10px] animate__animated animate__slideInLeft relative z-[1]">
+                                <h3 class="text-2xl font-600 text-[#0C1D32]">
+                                    Алибердиев Гайрат
+                                </h3>
+                                <p class="text-[#1C314E] font-medium text-lg text-opacity-[0.72] mt-[10px]">
+                                    Профессионал с 20-летним опытом работы в сфере дизайна интерьеров. Созданные им
+                                    дизайны
+                                    выделяются уникальностью и считаются эксклюзивными и феноменальними. Основатель и
+                                    руководитель школы дизайна и студии дизайна. Участник выдающихся проектов и
+                                    конкурсов в
+                                    Узбекистане в области строительства и ремонта. Работает и в стиле Bionica, тренд в
+                                    дизайне интерьера. Имеет свой творческий вкус, а так же взгляд на дизайны интерьеров
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="uk-position-relative uk-visible-toggle md:hidden" tabindex="-1" uk-slider>
+
+                <ul class="uk-slider-items uk-child-width-3-4 uk-grid">
+                    <li class="w-[88%]">
+                        <div class="pb-[50px]">
+                            <div x-data="{ open: true }">
+                                <div class="relative">
+                                    <img class="w-full testiminial-img-worker" src="../assets/images/main/testimonial-1.png" alt="worker">
+                                    <div class="absolute left-[22px] bottom-[30px] z-[2]">
+                                        <h3 class="text-[24px] text-white font-[600] font-gilroy">Алибердиев Гайрат</h3>
+                                        <p class="text-white text-xl">
+                                            Технадзор
+                                        </p>
+                                    </div>
+                                    <div class="w-full h-full absolute left-0 top-0"
+                                        style="background: linear-gradient(180deg, rgba(12, 29, 50, 0) 0%, #0C1D32 100%);">
+                                    </div>
+                                    <div @click="open = !open"
+                                        class="flex group z-[5] cursor-pointer absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-[#F19817] rounded-full items-center justify-center">
+                                        <svg :class="open ? 'rotate-0' : ''" class="rotate-[45deg] duration-200"
+                                            width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.28467 17.4141L17.3139 6.38485" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M17.3086 17.4096L6.28955 6.39062" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div x-show="open" @click.outside="open = false"
+                                    class="mt-[50px] animate__animated animate__slideInLeft relative z-[1]">
+                                    <h3 class="text-2xl font-600 text-[#0C1D32]">
+                                        Алибердиев Гайрат
+                                    </h3>
+                                    <p class="text-[#1C314E] font-medium text-lg text-opacity-[0.72] mt-[10px]">
+                                        Профессионал с 20-летним опытом работы в сфере дизайна интерьеров. Созданные им
+                                        дизайны
+                                        выделяются уникальностью и считаются эксклюзивными и феноменальними. Основатель
+                                        и
+                                        руководитель школы дизайна и студии дизайна. Участник выдающихся проектов и
+                                        конкурсов в
+                                        Узбекистане в области строительства и ремонта. Работает и в стиле Bionica, тренд
+                                        в
+                                        дизайне интерьера. Имеет свой творческий вкус, а так же взгляд на дизайны
+                                        интерьеров
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-[88%]">
+                        <div class="pb-[50px]">
+                            <div x-data="{ open: false }">
+                                <div class="relative">
+                                    <img class="w-full testiminial-img-worker" src="../assets/images/main/testimonial-2.png" alt="worker">
+                                    <div class="absolute left-[22px] bottom-[30px] z-[2]">
+                                        <h3 class="text-[24px] text-white font-[600] font-gilroy">Миразиз Ахмедов</h3>
+                                        <p class="text-white text-xl">
+                                            Дизайнер
+                                        </p>
+                                    </div>
+                                    <div class="w-full h-full absolute left-0 top-0"
+                                        style="background: linear-gradient(180deg, rgba(12, 29, 50, 0) 0%, #0C1D32 100%);">
+                                    </div>
+                                    <div @click="open = !open"
+                                        class="flex group z-[5] cursor-pointer absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-[#F19817] rounded-full items-center justify-center">
+                                        <svg :class="open ? 'rotate-0' : ''" class="rotate-[45deg] duration-200"
+                                            width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.28467 17.4141L17.3139 6.38485" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M17.3086 17.4096L6.28955 6.39062" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div x-show="open" @click.outside="open = false"
+                                    class="mt-[50px] animate__animated animate__slideInLeft relative z-[1]">
+                                    <h3 class="text-2xl font-600 text-[#0C1D32]">
+                                        Миразиз Ахмедов
+                                    </h3>
+                                    <p class="text-[#1C314E] font-medium text-lg text-opacity-[0.72] mt-[10px]">
+                                        Профессионал с 20-летним опытом работы в сфере дизайна интерьеров. Созданные им
+                                        дизайны
+                                        выделяются уникальностью и считаются эксклюзивными и феноменальними. Основатель
+                                        и
+                                        руководитель школы дизайна и студии дизайна. Участник выдающихся проектов и
+                                        конкурсов в
+                                        Узбекистане в области строительства и ремонта. Работает и в стиле Bionica, тренд
+                                        в
+                                        дизайне интерьера. Имеет свой творческий вкус, а так же взгляд на дизайны
+                                        интерьеров
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="w-[88%]">
+                        <div class="pb-[50px]">
+                            <div x-data="{ open: false }">
+                                <div class="relative">
+                                    <img class="w-full testiminial-img-worker" src="../assets/images/main/testimonial-3.png" alt="worker">
+                                    <div class="absolute left-[22px] bottom-[30px] z-[2]">
+                                        <h3 class="text-[24px] text-white font-[600] font-gilroy">Игорь Ан</h3>
+                                        <p class="text-white text-xl">
+                                            Дизайнер
+                                        </p>
+                                    </div>
+                                    <div class="w-full h-full absolute left-0 top-0"
+                                        style="background: linear-gradient(180deg, rgba(12, 29, 50, 0) 0%, #0C1D32 100%);">
+                                    </div>
+                                    <div @click="open = !open"
+                                        class="flex group z-[5] cursor-pointer absolute bottom-[-24px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-[#F19817] rounded-full items-center justify-center">
+                                        <svg :class="open ? 'rotate-0' : ''" class="rotate-[45deg] duration-200"
+                                            width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.28467 17.4141L17.3139 6.38485" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M17.3086 17.4096L6.28955 6.39062" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div x-show="open" @click.outside="open = false"
+                                    class="mt-[50px] animate__animated animate__slideInLeft relative z-[1]">
+                                    <h3 class="text-2xl font-600 text-[#0C1D32]">
+                                        Игорь Ан
+                                    </h3>
+                                    <p class="text-[#1C314E] font-medium text-lg text-opacity-[0.72] mt-[10px]">
+                                        Профессионал с 20-летним опытом работы в сфере дизайна интерьеров. Созданные им
+                                        дизайны
+                                        выделяются уникальностью и считаются эксклюзивными и феноменальними. Основатель
+                                        и
+                                        руководитель школы дизайна и студии дизайна. Участник выдающихся проектов и
+                                        конкурсов в
+                                        Узбекистане в области строительства и ремонта. Работает и в стиле Bionica, тренд
+                                        в
+                                        дизайне интерьера. Имеет свой творческий вкус, а так же взгляд на дизайны
+                                        интерьеров
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section bg-no-repeat bg-cover bg-[#0C1D32] sm:mt-[70px] quatection-section-1"
+        style="background-image: url('../assets/images/main/quotection-1-back.png')">
+        <div class="uk-container uk-container-large">
+            <div class="relative">
+                <div class="lg:w-[700px] relative z-[2]">
+                    <div>
+                        <h2 class="text-white heading-quote"
+                            uk-scrollspy="cls: animate__animated animate__lightSpeedInLeft;">
+                            С BRIGADA-S всё мобильно, стильно
+                            и надёжно построить, отремонтировать
+                            Ваш дом в идеале.
+                        </h2>
+                    </div>
+                    <div class="text-white mt-[32px]">
+                        <a href="#modalForm" uk-toggle
+                            class="duration-100 bg-[#F19817] text-[#0C1D32] text-opacity-[0.92] font-600 text-sm hover-link px-[22px] py-[12px]">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+
+                <div class="absolute bottom-[-70px] sm:bottom-[-170px] right-[-40px] sm:right-0 z-[1] sm:hidden lg:block">
+                    <img class="w-[180px] sm:w-auto" src="../assets/images/main/quotection-3-img.png" alt="quote"
+                        uk-scrollspy="cls: animate__animated animate__flipInX; repeat: true; delay: 200">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="Contacts" class="uk-section uk-padding-remove-bottom">
+        <div class="uk-container uk-container-large">
+            <div class="border-y-2 border-[#DFDFDF] py-[30px] flex justify-center">
+                <div>
+                    <div class="flex justify-center">
+                        <a href="#">
+                            <img class="w-[95px]" src="../assets/images/svg/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul
+                        class="sm:space-x-[16px] md:space-x-[42px] flex items-center flex-col sm:flex-row mt-[22px] space-y-[16px] sm:space-y-0">
+                        <li class="text-[#111111cd]">
+                            <a class="text-[#111111] font-600 hover-link" href="#AboutUS">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="text-[#111111cd]">
+                            <a class="text-[#111111] font-600 hover-link" href="#WhyWe">
+                                Почему мы?
+                            </a>
+                        </li>
+                        <li class="text-[#111111cd]">
+                            <a class="text-[#111111] font-600 hover-link" href="#Testiminial">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="text-[#111111cd]">
+                            <a class="text-[#111111] font-600 hover-link" href="#Staff">
+                                Команда
+                            </a>
+                        </li>
+                        <li class="text-[#111111cd]">
+                            <a class="text-[#111111] font-600 hover-link" href="#Contacts">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-b-2 border-[#DFDFDF] py-[30px] uk-grid-large flex-col text-center sm:text-left sm:flex-row items-center sm:items-start xl:justify-between"
+                uk-grid>
+                <div class="uk-width-1-3@s">
+                    <h3 class="text-[#0C1D32] font-medium text-opacity-[0.72]">
+                        Как мы работаем:
+                    </h3>
+                    <p class="text-[#0C1D32] font-medium text-lg mt-[4px]">
+                        Мы никогда не мелочимся чтобы сэкономить
+                        время или деньги. Договор ло нас закон и мы
+                        его строго выполняемю
+                    </p>
+                </div>
+                <div class="uk-width-1-3@s space-y-[2px] flex flex-col text-[#0C1D32] items-center sm:items-start">
+                    <h3 class="text-[#0C1D32] font-medium text-opacity-[0.72]">
+                        Как можно нас найти?
+                    </h3>
+                    <a href="#" class="text-[#0C1D32] font-medium text-lg hover-link">
+                        Место назначение компании
+                    </a>
+                    <a href="tel:+998979008844" class="text-[#0C1D32] font-medium text-lg hover-link">
+                        +998 97 900 88 44
+                    </a>
+                    <ul class="flex items-center space-x-[12px] sm:space-x-[22px]">
+                        <li class="text-[#0C1D32]">
+                            <a href="#" class="line-animation text-[#0C1D32] font-medium hover-link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="text-[#0C1D32]">
+                            <a href="#" class="line-animation text-[#0C1D32] font-medium hover-link">
+                                Telegram
+                            </a>
+                        </li>
+                        <li class="text-[#0C1D32]">
+                            <a href="#" class="line-animation text-[#0C1D32] font-medium hover-link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="text-[#0C1D32]">
+                            <a href="#" class="line-animation text-[#0C1D32] font-medium hover-link">
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="xl:w-[360px]">
+                    <h3 class="text-[#0C1D32] font-medium text-opacity-[0.72]">
+                        Если остались вопросы
+                        отправьте свой номер
+                    </h3>
+                    <div class="flex items-center w-full justify-between mt-[22px]">
+                        <input
+                            class="py-[6px] px-[22px]  border border-[#0C1D32] focus:outline-none text-[#0C1D32] placeholder:text-opacity-[0.42] font-medium"
+                            type="text" placeholder="Tel.raqamingiz">
+                        <div
+                            class="flex items-center justify-center w-full h-full border border-l-0 py-[11px] border-[#0C1D32]">
+                            <svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 6.86267C0 7.24206 0.341948 7.5556 0.785603 7.60522L0.908941 7.61206L19.0878 7.61206C19.5898 7.61206 19.9967 7.27655 19.9967 6.86267C19.9967 6.48328 19.6548 6.16974 19.2111 6.12012L19.0878 6.11328L0.908941 6.11328C0.406947 6.11328 0 6.44879 0 6.86267Z"
+                                    fill="#0C1D32" />
+                                <path
+                                    d="M14.17 12.3429C13.8765 12.6345 13.8755 13.1082 14.1677 13.401C14.4334 13.6672 14.8499 13.6922 15.1439 13.4755L15.2282 13.4033L21.2773 7.39404C21.5449 7.12821 21.5692 6.71112 21.3503 6.41777L21.2773 6.33375L15.2283 0.323506C14.9348 0.0319362 14.46 0.032917 14.1678 0.325697C13.9021 0.591861 13.8787 1.00755 14.0972 1.29999L14.17 1.38376L19.6851 6.86417L14.17 12.3429Z"
+                                    fill="#0C1D32" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="md:justify-between flex-col md:flex-row uk-flex-middle py-[30px]" uk-grid>
+                    <div>
+                        <p class="text-[#0C1D32] sm:text-lg font-medium text-opacity-[0.72] text-center text-sm">
+                            © BRIGADA-S barcha huqular himoyalangan
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://mount.uz">
+                            <img src="../assets/images/logos/mount.svg" alt="Mountain It&Design">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- modal -->
+    <div id="modalForm" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical bg-[#0C1D32] uk-padding-large rounded-[12px]"
+            style="backdrop-filter: blur(72px);">
+
+            <button class="uk-modal-close-default absolute top-[20px] group right-[20px] z-[3] cursor-pointer"
+                type="button" uk-close>
+                <svg class="group-hover:rotate-[180deg] duration-300" width="32" height="32" viewBox="0 0 32 32"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="15.5" stroke="white" />
+                    <path d="M11 20.66L20.66 11" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M20.66 20.66L11 11" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <form>
+                <h2 class="text-white font-gilroy text-[24px] sm:text-[30px]">
+                    Sifatli va zamonaviy binolar
+                    kerak bolsa malumotlarni
+                    kriting
+                </h2>
+                <div class="flex flex-col space-y-[22px] mt-[32px] w-[270px]">
+                    <input
+                        class="focus:outline-none border-[1px] border-[#fff] rounded-[20px] py-[6px] px-[22px] bg-transparent text-white placeholder:text-opacity-[-.42] font-medium"
+                        type="text" placeholder="Ismingiz">
+                    <input
+                        class="focus:outline-none border-[1px] border-[#fff] rounded-[20px] py-[6px] px-[22px] bg-transparent text-white placeholder:text-opacity-[-.42] font-medium"
+                        type="text" placeholder="Tel.raqamingiz">
+                    <div class="inline-block">
+                        <button
+                            class="hover:scale-[1.05] rounded-[20px] py-[12px] px-[22px] bg-white text-[#0C1D32] text-sm font-600">Оставить
+                            заявку</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div id="overlay"
+        class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle"
+        style="background-color: #fff !important; z-index: 10001;">
+        <div id="loader" class="w-full h-full">
+            <div class="bg-[#fff] w-full h-full flex items-center flex-col justify-center">
+                <img class="w-[120px] sm:w-[220px] mb-[30px]" src="../assets/images/svg/logo.svg" alt="Logo">
+                <h1 class="loader-title font-600 tracking-[1px] text-[#111] font-gilroy">Loading</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/uikit-icons.min.js"></script>
+    <script src="../assets/js/uikit.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+</body>
+
+</html>

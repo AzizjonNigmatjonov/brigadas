@@ -1,0 +1,13 @@
+@import 'style';
+@import "responsive";
+@import 'anim';
+@import "font";
+*,*::after,*::before {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Gilroy' !important;
+}

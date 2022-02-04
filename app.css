@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .heading {
+        @apply text-[30px] sm:text-[38px] font-[600]
+    }
+    .heading-second {
+        @apply text-[24px] sm:text-[28px] md:text-[32px] font-[600];
+    }
+    .heading-quote {
+        @apply text-[24px] md:text-[36px] font-bold;
+    }
+    .font-600 {
+        font-weight: 600;
+    }
+    .font-800 {
+        font-weight: 800;
+    }
+    .hover-link {
+        @apply hover:no-underline;
+    }
+    .hover-link:hover {
+        color: inherit;
+    }
+    .font-gilroy {
+        font-family: 'Gilroy';
+    }
+}
