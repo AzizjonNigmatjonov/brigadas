@@ -91,6 +91,21 @@ html::-webkit-scrollbar-track {
   min-height: 700px !important;
 }
 
+.workers-tab {
+  overflow: auto;
+  width: 100%;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.workers-tab::before {
+  display: none;
+}
+
+.workers-tab::-webkit-scrollbar {
+  display: none;
+}
+
 @media (min-width: 1920px) {
   .header {
     max-width: 1536px;
@@ -277,6 +292,14 @@ html::-webkit-scrollbar-track {
 @media (max-width: 430px) {
   .testiminial-img-worker {
     max-height: 380px !important;
+  }
+  .uk-lightbox .uk-slidenav-next {
+    top: auto;
+    bottom: 120px;
+  }
+  .uk-lightbox .uk-slidenav-previous {
+    top: auto;
+    bottom: 120px;
   }
 }
 

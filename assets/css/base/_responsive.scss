@@ -174,4 +174,14 @@
   .testiminial-img-worker {
     max-height: 380px !important;
   }
+  .uk-lightbox {
+    .uk-slidenav-next {
+      top: auto;
+      bottom: 120px;
+    }
+    .uk-slidenav-previous {
+      top: auto;
+      bottom: 120px;
+    }
+  }
 }

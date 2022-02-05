@@ -83,3 +83,16 @@ html::-webkit-scrollbar-track {
   min-height: 700px !important;
 }
 
+.workers-tab{
+  overflow: auto;
+  width: 100%;
+  flex-wrap: nowrap!important;
+}
+
+.workers-tab::before {
+  display: none;
+}
+
+.workers-tab::-webkit-scrollbar{
+  display: none;
+}
