@@ -1505,6 +1505,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+  .sm\:min-h-\[100vh\] {
+    min-height: 100vh;
+  }
+
   .sm\:w-\[500px\] {
     width: 500px;
   }
