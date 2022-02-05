@@ -295,11 +295,11 @@ html::-webkit-scrollbar-track {
   }
   .uk-lightbox .uk-slidenav-next {
     top: auto;
-    bottom: 120px;
+    bottom: 50px;
   }
   .uk-lightbox .uk-slidenav-previous {
     top: auto;
-    bottom: 120px;
+    bottom: 50px;
   }
 }
 
